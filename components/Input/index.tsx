@@ -7,7 +7,7 @@ type Props = InputHTMLAttributes<HTMLInputElement> & {
 };
 
 const classMap = {
-  text: "textInput",
+  email: "textInput",
 };
 
 const Input: React.FC<Props> = ({ label, name, ...props }): JSX.Element => {

@@ -17,12 +17,14 @@ const GreenForm: React.FC = (): JSX.Element => {
         className={styles.form}
         onSubmit={(e) => e.preventDefault()}
       >
-        <Input type="text" label="Email Address" name="email-login" />
-        <Input
-          type="checkbox"
-          label="Remember this device"
-          name="remember-this-device"
-        />
+        <div>
+          <Input type="email" label="Email Address" name="email-login" />
+          <Input
+            type="checkbox"
+            label="Remember this device"
+            name="remember-this-device"
+          />
+        </div>
         <Button
           label="Sign In"
           type="submit"
