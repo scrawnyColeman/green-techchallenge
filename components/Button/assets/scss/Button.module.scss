@@ -10,6 +10,12 @@
   border: 1px solid $gray1;
   background: none;
 }
+.largeBtn {
+  all: unset; // stubbed for passing test
+}
+.secondaryBtn {
+  all: unset; // stubbed for passing test
+}
 
 .btn {
   border-radius: $borderRadius;

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GreenForm should render 1`] = `
+<DocumentFragment>
+  <div
+    class="formWrapper"
+  >
+    <div>
+      <img
+        alt="Green Logo"
+        height="48"
+        src="https://green.cdn.energy/branding/logo-r.svg"
+        width="96"
+      />
+      <h2
+        class="formTitle"
+      >
+        Operations studio
+      </h2>
+      <p
+        class="formSubtitle"
+      >
+        Please enter your email below
+      </p>
+    </div>
+    <form
+      class="form"
+    >
+      <div
+        class="inputWrapper"
+      >
+        <label
+          class="inputLabel"
+          for="email-login"
+        >
+          Email Address
+        </label>
+        <input
+          class="textInput"
+          id="email-login"
+          type="text"
+        />
+      </div>
+      <div
+        class="checkboxWrapper"
+      >
+        <input
+          checked=""
+          id="remember-this-device"
+          type="checkbox"
+        />
+        <label
+          class="checkboxLabel"
+          for="remember-this-device"
+        >
+          Remember this device
+        </label>
+      </div>
+      <button
+        aria-label="Sign In"
+        class="regularBtn primaryBtn btn"
+      >
+        Sign In
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

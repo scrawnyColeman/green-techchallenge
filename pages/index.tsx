@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.scss";
 
 const Home: React.FC = (): JSX.Element => {
   return (
-    <div className={styles.homepage}>
+    <div className={styles.homepage} data-testid="form-container">
       <GreenForm />
     </div>
   );

@@ -13,14 +13,14 @@ const GreenForm: React.FC = (): JSX.Element => {
         <p className={styles.formSubtitle}>Please enter your email below</p>
       </div>
       <form className={styles.form}>
-        <div>
-          <Input type="text" label="Email Address" name="email-login" />
-          <Input
-            type="checkbox"
-            label="Remember this device"
-            name="remember-this-device"
-          />
-        </div>
+        {/* <div> */}
+        <Input type="text" label="Email Address" name="email-login" />
+        <Input
+          type="checkbox"
+          label="Remember this device"
+          name="remember-this-device"
+        />
+        {/* </div> */}
         <Button label="Sign In" onClick={(e) => e.preventDefault()} />
       </form>
     </div>
