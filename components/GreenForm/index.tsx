@@ -14,10 +14,9 @@ const GreenForm: React.FC = (): JSX.Element => {
       </div>
       <form className={styles.form}>
         <div>
-          <Input label="Email Address" name="email-login" />
+          <Input type="text" label="Email Address" name="email-login" />
           <Input
             type="checkbox"
-            inputType="checkbox"
             label="Remember this device"
             name="remember-this-device"
           />

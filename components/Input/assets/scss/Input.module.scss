@@ -1,24 +1,25 @@
-.inputLabel {
-  color: #6e6c6c;
+@import "../../../../constants/constants.scss";
+
+%label {
+  color: $gray3;
   font-size: 0.8rem;
-  padding: 0 0 0.5rem 0.25rem;
+}
+
+.inputLabel {
+  @extend %label;
+  padding-bottom: 0.5rem;
 }
 
 .checkboxLabel {
-  color: #6e6c6c;
-  font-size: 0.6rem;
+  @extend %label;
   padding-left: 0.25rem;
 }
 
 .textInput {
   width: 100%;
   padding: 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid #eee;
-}
-
-.checkbox {
-  margin: 0;
+  border-radius: $borderRadius;
+  border: 1px solid $gray1;
 }
 
 .checkboxWrapper {

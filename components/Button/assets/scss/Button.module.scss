@@ -1,18 +1,21 @@
+@import "../../../../constants/constants.scss";
+
 .regularBtn {
   width: 6rem;
   padding: 0.75rem 1rem;
 }
 
 .primaryBtn {
-  color: #1e1e1e;
-  border: 1px solid #eee;
+  color: $gray4;
+  border: 1px solid $gray1;
   background: none;
 }
 
 .btn {
-  border-radius: 0.25rem;
+  border-radius: $borderRadius;
   &:hover {
     cursor: pointer;
+    border: 2px solid $gray1;
   }
   &:focus,
   &:active {

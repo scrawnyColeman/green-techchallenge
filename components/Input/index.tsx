@@ -4,29 +4,17 @@ import Styles from "./assets/scss/Input.module.scss";
 type Props = InputHTMLAttributes<HTMLInputElement> & {
   name: string;
   label: string;
-  inputType?: string;
 };
 
 const classMap = {
-  checkbox: "checkbox",
   text: "textInput",
 };
 
-const Input: React.FC<Props> = ({
-  label,
-  name,
-  inputType = "text",
-  ...props
-}): JSX.Element => {
-  if (inputType === "checkbox") {
+const Input: React.FC<Props> = ({ label, name, ...props }): JSX.Element => {
+  if (props.type === "checkbox") {
     return (
       <div className={Styles.checkboxWrapper}>
-        <input
-          id={name}
-          {...props}
-          className={Styles[classMap[inputType]]}
-          defaultChecked
-        />
+        <input id={name} {...props} defaultChecked />
         <label htmlFor={name} className={Styles.checkboxLabel}>
           {label}
         </label>
@@ -38,7 +26,7 @@ const Input: React.FC<Props> = ({
       <label htmlFor={name} className={Styles.inputLabel}>
         {label}
       </label>
-      <input id={name} {...props} className={Styles[classMap[inputType]]} />
+      <input id={name} {...props} className={Styles[classMap[props.type]]} />
     </div>
   );
 };

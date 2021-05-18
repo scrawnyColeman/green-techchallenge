@@ -1,28 +1,30 @@
-.formWrapper {
-  height: 400px;
-  width: 400px;
-  padding: 2rem;
-  box-shadow: 0 0 0.1rem 0.05rem #eee;
+@import "../../../../constants/constants.scss";
+
+%flexSpacedCol {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
+.formWrapper {
+  @extend %flexSpacedCol;
+  height: 400px;
+  width: 400px;
+  padding: 2rem;
+  box-shadow: 0 0 0.1rem 0.05rem $gray1;
+}
+
+.form {
+  @extend %flexSpacedCol;
+  height: 50%;
+}
+
 .formTitle {
-  margin: 0;
-  padding: 1rem 0 0 0.25rem;
+  padding-top: 1rem;
   font-weight: 600;
 }
 
 .formSubtitle {
-  margin: 0;
-  padding: 0.5rem 0 0 0.25rem;
-  color: #a5a3a3;
-}
-
-.form {
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding-top: 0.5rem;
+  color: $gray2;
 }
