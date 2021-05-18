@@ -12,16 +12,22 @@ const GreenForm: React.FC = (): JSX.Element => {
         <h2 className={styles.formTitle}>Operations studio</h2>
         <p className={styles.formSubtitle}>Please enter your email below</p>
       </div>
-      <form className={styles.form}>
-        {/* <div> */}
+      <form
+        data-testid="form"
+        className={styles.form}
+        onSubmit={(e) => e.preventDefault()}
+      >
         <Input type="text" label="Email Address" name="email-login" />
         <Input
           type="checkbox"
           label="Remember this device"
           name="remember-this-device"
         />
-        {/* </div> */}
-        <Button label="Sign In" onClick={(e) => e.preventDefault()} />
+        <Button
+          label="Sign In"
+          type="submit"
+          onClick={(e) => e.preventDefault()}
+        />
       </form>
     </div>
   );

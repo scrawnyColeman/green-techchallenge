@@ -25,7 +25,7 @@ describe("Button", () => {
   });
 
   it("should have correct default classes", () => {
-    render(<Button label="test-btn" onClick={clickMock} />);
+    render(<Button label="test-btn" />);
     const btn = screen.getByRole("button");
     expect(btn).toHaveClass("primaryBtn");
     expect(btn).toHaveClass("regularBtn");
@@ -36,7 +36,7 @@ describe("Button", () => {
       size: Sizes.LARGE,
       variant: Variants.SECONDARY,
     };
-    render(<Button label="test-btn" onClick={clickMock} {...customProps} />);
+    render(<Button label="test-btn" {...customProps} />);
     const btn = screen.getByRole("button");
     expect(btn).toHaveClass("secondaryBtn");
     expect(btn).toHaveClass("largeBtn");
